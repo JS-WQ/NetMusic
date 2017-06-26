@@ -1,9 +1,8 @@
-*{padding: 0;margin: 0;box-sizing: border-box;}
+*{padding: 0;margin: 0;box-sizing: border-box;font-family: Helvetica, sans-serif;}
 ol,li{list-style: none;}
-.topBar{background: #d43c33;display: flex;justify-content: space-between;align-items: center;padding: 4.6vw 2.5vw;}
-.topsvg{width: 38vw;}
+.topBar{background: #d43c33;display: flex;justify-content: space-between;align-items: center;padding: 4.54vw 2.5vw;}
+.topsvg{width: 37.9vw;}
 .topBar a{text-decoration: none;color: #ffffff;border:1px solid rgba(255, 255, 255, 0.5);border-radius: 20vw;line-height:7.5vw;padding:0 2.4vw;font-family: Helvetica, sans-serif;font-size: 4vw;}
-.siteNav{}
 .siteNav>ol{display: flex;text-align: center;border-bottom: 1px solid #cccccc;}
 .siteNav>ol>li{flex: 1;}
 .siteNav>ol>li.active{color: #D33A31;}
@@ -13,8 +12,8 @@ ol,li{list-style: none;}
     position: absolute;
     bottom: 0;
     border-top: 2px solid #D33A31;
-    left: -2vw;
-    right: -2vw;
+    left: -1.5vw;
+    right: -1.5vw;
 }
 .recomMusic{margin-top: 5vw;margin-bottom: 6vw;}
 .recomMusic h2{
@@ -29,11 +28,10 @@ ol,li{list-style: none;}
     border-left: 2px solid #D33A31;
     padding-right: 2vw;
 }
-.recomMusic>ul{display: flex;justify-content: space-between;flex-wrap: wrap;}
-.recomMusic>ul>li{width: calc(33.333333% - 1vw);margin-bottom: 4.2vw;}
-.recomMusic>ul>li>img{width: 100%;}
-.recomMusic>ul>li>p{font-size: 3vw;color: #333;font-family: Helvetica, sans-serif;margin-top: 1vw;margin-left: 1vw;display: -webkit-box;-webkit-line-clamp:2;-webkit-box-orient: vertical;overflow: hidden;}
-.newMusic{}
+.recomMusic>ol{display: flex;justify-content: space-between;flex-wrap: wrap;}
+.recomMusic>ol>li{width: calc(33.333333% - 0.5vw);margin-bottom: 4.2vw;}
+.recomMusic>ol>li>img{width: 100%;}
+.recomMusic>ol>li>p{font-size: 3vw;color: #333;font-family: Helvetica, sans-serif;margin-left: 1vw;display: -webkit-box;-webkit-line-clamp:2;-webkit-box-orient: vertical;overflow: hidden;}
 .newMusic>h2{
     font-size: 4.5vw;
     font-family: Helvetica, sans-serif;
@@ -46,3 +44,40 @@ ol,li{list-style: none;}
     border-left: 2px solid #D33A31;
     padding-right: 2vw;
 }
+.newMusic ol{padding-left: 2vw;}
+.newMusic ol li{padding: 2vw 0;border-bottom: 1px solid #cccccc;position: relative;}
+.newMusic ol li h3{font-size: 4.5vw;color: #333;}
+.newMusic ol li p{color: #888;font-size: 3.2vw;display: inline-block;margin-left: -0.5vw;}
+.newMusic ol li i{
+    display: inline-block;
+    background: url(http://s3.music.126.net/m/s/img/index_icon_2x.png?5207a28c3767992ca4bb6d4887c74880) no-repeat;
+    background-size: 166px 97px;
+    width: 3.2vw;
+    height: 2.1vw;
+}
+.newMusic ol li span{
+    width: 5.9vw;
+    height: 5.9vw;
+    display: inline-block;
+    background: url(http://s3.music.126.net/m/s/img/index_icon_2x.png?5207a28c3767992ca4bb6d4887c74880) no-repeat;
+    background-size: 166px 97px;
+    background-position: -24px 0;
+    position: absolute;
+    right: 2vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.footer{display: flex;justify-content: center;align-items: center;flex-wrap:wrap;margin-top: 1.06vw;background: url(http://s3.music.126.net/m/s/img/recommand_bg_2x.png?d045fafc60e017b653f8065a87496922);}
+.footer .logosvg{width: 61.33vw;height: 11.733vw;margin-top:16.9vw; }
+.footer a{
+    display: block;
+    text-decoration: none;
+    color: #d33a31;
+    font-size: 4.266vw;
+    border: 1px solid #d33a31;
+    padding: 2.266vw 14.266vw;
+    border-radius: 20vw;
+    margin-top: 4vw;
+    margin-bottom: 1.33vw;
+}
+.footer .copyright{font-size: 3.2vw;transform: scale(.75);color: #888;margin-bottom: 4.266vw;}
