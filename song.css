@@ -1,4 +1,6 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
+
+@keyframes circle{0% {transform: rotate(0deg); } 100% {transform: rotate(360deg); } }
 #page{height:100vh;display: flex;flex-wrap: wrap;background: url(http://p4.music.126.net/kEwiCQ2ICFwZPgIAYPaDqw==/2517881727610347.jpg);background-size: cover;flex-direction: column;position: relative;}
 .song-container{position: relative;width: 100%;}
 .song-container .musicbg{width: 25.6vw;position: absolute;left: 46vw;z-index: 5;}
@@ -17,6 +19,8 @@
 }
 .song-container .song-ring .trans-ring{
     width: 79vw;
+    animation: circle 20s infinite linear;
+    animation-play-state: running;
 }
 .song-container .song-ring .black-ring{
     width: 79vw;    
@@ -29,6 +33,9 @@
     width: 49.1vw;
     height: 49.1vw;
     z-index: 3;
+    border-radius: 50%;
+    animation: circle 20s infinite linear;
+    animation-play-state: running;
 }
 .playing{}
 .song-subtitle{text-align: center;margin-top: 6.66vw;}
