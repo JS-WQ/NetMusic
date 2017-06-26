@@ -1,0 +1,32 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+#page{height:100vh;display: flex;justify-content: center;flex-wrap: wrap;background: url(http://p4.music.126.net/kEwiCQ2ICFwZPgIAYPaDqw==/2517881727610347.jpg);background-size: cover;}
+.song-container{position: relative;width: 100%;}
+.song-container .musicbg{width: 25.6vw;position: absolute;left: 46vw;z-index: 5;}
+.song-container .song-ring{
+    margin-top: 18.66vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.song-container .song-ring .trans-ring{
+    width: 79vw;
+}
+.song-container .song-ring .black-ring{
+    width: 79vw;    
+    position: absolute;
+    z-index: 4;
+
+}
+.song-container .song-ring .ring-musicbg{
+    position: absolute;
+    width: 49.1vw;
+    height: 49.1vw;
+    z-index: 3;
+}
+.playing{}
+.song-subtitle{}
+.song-subtitle h2{
+    font-size: 4.8vh;
+}
+.APP-links{}
