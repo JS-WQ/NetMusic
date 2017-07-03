@@ -39,6 +39,7 @@ ol,li{list-style: none;}
     line-height: 5vw;
     padding-bottom: 3.8vw;
     }
+.newMusic>p{text-align: center;}
 .newMusic h2::before{
     content: '';
     border-left: 2px solid #D33A31;
@@ -46,16 +47,17 @@ ol,li{list-style: none;}
 }
 .newMusic ol{padding-left: 2vw;}
 .newMusic ol li{padding: 2vw 0;border-bottom: 1px solid #cccccc;position: relative;}
-.newMusic ol li h3{font-size: 4.5vw;color: #333;}
-.newMusic ol li p{color: #888;font-size: 3.2vw;display: inline-block;margin-left: -0.5vw;}
-.newMusic ol li i{
+.newMusic ol li a{text-decoration: none;}
+.newMusic ol li a h3{font-size: 4.5vw;color: #333;}
+.newMusic ol li a p{color: #888;font-size: 3.2vw;display: inline-block;margin-left: -0.5vw;}
+.newMusic ol li a i{
     display: inline-block;
     background: url(http://s3.music.126.net/m/s/img/index_icon_2x.png?5207a28c3767992ca4bb6d4887c74880) no-repeat;
     background-size: 166px 97px;
     width: 3.2vw;
     height: 2.1vw;
 }
-.newMusic ol li span{
+.newMusic ol li a span{
     width: 5.9vw;
     height: 5.9vw;
     display: inline-block;

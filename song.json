@@ -1,11 +1,10 @@
 [
-    {"songs":"千年之恋","url":"http://up.haoduoge.com:82/mp3/2017-06-25/1498387051.mp3","演唱者":"FIR"},
-    {"songs":"那些花儿","url":"http://7xrxd2.com1.z0.glb.clouddn.com/1.mp4","演唱者":"朴树"},
-    {"songs":"情非得已","url":"http://7xrxd2.com1.z0.glb.clouddn.com/2.mp4","演唱者":"庾澄庆"},
-    {"songs":"下雨天","url":"http://mp3.haoduoge.com/s/2017-06-24/1498291584.mp3","演唱者":"南拳妈妈"},
-    {"songs":"猜不透","url":"http://mp3.haoduoge.com/s/2017-06-24/1498264274.mp3","演唱者":"丁当"},
-    {"songs":"我爱他","url":"http://mp3.haoduoge.com/s/2017-06-24/1498263907.mp3","演唱者":"丁当"},
-    {"songs":"霞光","url":"http://mp3.haoduoge.com/s/2017-06-24/1498254733.mp3","演唱者":"曲锦楠"},
-    {"songs":"杀破狼","url":"http://mp3.haoduoge.com/s/2017-06-22/1498130807.mp3","演唱者":"JS"}
-    
+    {"id":1,"name":"千年之恋","url":"http://up.haoduoge.com:82/mp3/2017-06-25/1498387051.mp3","singer":"FIR"},
+    {"id":2,"name":"那些花儿","url":"http://7xrxd2.com1.z0.glb.clouddn.com/1.mp4","singer":"朴树"},
+    {"id":3,"name":"情非得已","url":"http://7xrxd2.com1.z0.glb.clouddn.com/2.mp4","singer":"庾澄庆"},
+    {"id":4,"name":"下雨天","url":"http://mp3.haoduoge.com/s/2017-06-24/1498291584.mp3","singer":"南拳妈妈"},
+    {"id":5,"name":"猜不透","url":"http://mp3.haoduoge.com/s/2017-06-24/1498264274.mp3","singer":"丁当"},
+    {"id":6,"name":"我爱他","url":"http://mp3.haoduoge.com/s/2017-06-24/1498263907.mp3","singer":"丁当"},
+    {"id":7,"name":"霞光","url":"http://mp3.haoduoge.com/s/2017-06-24/1498254733.mp3","singer":"曲锦楠"},
+    {"id":8,"name":"杀破狼","url":"http://mp3.haoduoge.com/s/2017-06-22/1498130807.mp3","singer":"JS"}
 ]
