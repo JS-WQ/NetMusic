@@ -4,7 +4,12 @@ $(function(){
     $.get('./song.json').then(function(response){
         let songs = response
         let song = songs.filter(s=>s.id === id)[0]
-        let {url} = song
+        let {url,name,lyric} = song     
+        initSong.call(undefined,url)
+        initLyric(name,lyric)
+    })
+
+    function initSong(url){
         let audio = document.createElement('audio')
         audio.src = url
         audio.oncanplay=function(){
@@ -19,12 +24,42 @@ $(function(){
             audio.play()
             $('.song-container').addClass('playing')
         })
-    })
-    $.get('/lyric.json').then(function(object){
-        let {lyric} = object //等价于let lyric = object.lyric
+        setInterval(()=>{
+            let songtimes = audio.currentTime
+            let munites = ~~(songtimes/60)//两次取反可以去掉小数点
+            let seconds = songtimes-munites*60
+            let time = `${pad(munites)}:${pad(seconds)}` 
+            let $lineLyric = $('.lines>p')
+            let $singline
+            for(let i=0;i<$lineLyric.length;i++){
+                if($lineLyric.eq(i).attr('data-time') < time &&$lineLyric.eq(i+1).length !== 0 && $lineLyric.eq(i+1).attr('data-time')>time){
+                    $singline = $lineLyric.eq(i)
+                    break
+                }
+            }
+            if($singline){
+                $singline.addClass('active').prev().removeClass('active')
+                let singlinetop = $singline.offset().top //选中行距顶部的高度
+                let linestop = $('.lines').offset().top //歌词模块距顶部的高度
+                let resulttop = singlinetop -linestop - $('.songLrc').height()/3
+                console.log(resulttop)
+                $('.lines').css('transform',`translateY(-${resulttop}px)`)
+            }
+        },500)
+    }
+
+    function pad(number){
+        return number>=10 ? number + '' :'0' + number
+    }
+
+    function initLyric(name,lyric){
+        $('.songName').text(name)
+        parseLyric.call(undefined,lyric)
+    }
+
+    function parseLyric(lyric){
         let array = lyric.split('\n') //把得到的数据分隔成不同的字符串
         let regex = /^\[(.+)\](.*)$/ 
-
         //对歌词进行分割
         array = array.map(function(string,index){
             let matches = string.match(regex)
@@ -32,5 +67,12 @@ $(function(){
                 return {time:matches[1],words:matches[2]}
             }
         })
-    })
+        let $lyric = $('.songLrc')
+        array.map(function(object){
+            if(!object){return}
+            let $p = $('<p></p>')
+            $p.attr('data-time',object.time).text(object.words)
+            $p.appendTo($lyric.children('.lines'))
+        })
+    }
 })

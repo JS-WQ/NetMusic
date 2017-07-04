@@ -55,7 +55,8 @@
     padding: 1.44vw 0;
     font-family: Helvetica, sans-serif;
 }
-
+.song-subtitle .songLrc .lines{transition: transform 0.3s;}
+.song-subtitle .songLrc .lines p.active{color: #ffffff;}
 .APP-links{font-family: Helvetica, sans-serif;position: absolute;bottom: 5.333vw;width: 100%;display: flex;justify-content: center;}
 .APP-links div{padding: 2.3vw 0;}
 .APP-links .openApp{padding:2.3vw 14.674vw;border: 1px solid #d43b32;color:#d43b32;border-radius: 1vw;margin-right: 1vw;}
