@@ -1,7 +1,7 @@
 *{margin: 0;padding: 0;box-sizing: border-box;overflow: hidden;}
 
 @keyframes circle{0% {transform: rotate(0deg); } 100% {transform: rotate(360deg); } }
-#page{height:100vh;display: flex;flex-wrap: wrap;background: url(http://p4.music.126.net/kEwiCQ2ICFwZPgIAYPaDqw==/2517881727610347.jpg);background-size: cover;flex-direction: column;position: relative;}
+#page{height:100vh;display: flex;flex-wrap: wrap;background-position:50%;background-size: cover;flex-direction: column;position: relative;}
 .song-container{position: relative;width: 100%;}
 .song-container .musicbg{width: 25.6vw;position: absolute;left: 46vw;z-index: 5;}
 .song-container .song-ring{
@@ -50,12 +50,12 @@
     font-weight: 400;
 }
 .song-subtitle .songLrc{margin-top: 2.293vw;height: 23.466vw;overflow: hidden;}
+.song-subtitle .songLrc .lines{transition: transform 0.3s;}
 .song-subtitle .songLrc .lines p{
     color: hsla(0,0%,100%,.6);
     padding: 1.44vw 0;
     font-family: Helvetica, sans-serif;
 }
-.song-subtitle .songLrc .lines{transition: transform 0.3s;}
 .song-subtitle .songLrc .lines p.active{color: #ffffff;}
 .APP-links{font-family: Helvetica, sans-serif;position: absolute;bottom: 5.333vw;width: 100%;display: flex;justify-content: center;}
 .APP-links div{padding: 2.3vw 0;}
