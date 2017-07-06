@@ -47,6 +47,8 @@
     height: 49.1vw;
     z-index: 3;
     border-radius: 50%;
+    border:1px solid black;
+    
 
 }
 .song-subtitle{text-align: center;margin-top: 6.66vw;}
