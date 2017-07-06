@@ -17,7 +17,10 @@ $(function(){
         audio.oncanplay=function(){
             $('.song-container').addClass('playing')
             $('#page').css("background-image",`url(${bgimage})`)
-            $('.ring-musicbg').prop("src",`${image}`)
+
+            $('.ring-musicbg').attr("src",`${image}`)
+
+
             audio.play()
         }
         audio.onended=function(){
