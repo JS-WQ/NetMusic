@@ -30,11 +30,13 @@
 .song-container.playing .icon-play{display: none; }
 .song-container .song-ring .trans-ring{
     width: 79vw;
+    position: relative;
     z-index: 5;
 }
 .song-container .song-ring .black-ring{
     width: 79vw;    
     position: absolute;
+    z-index: 1;
 }
 .song-container .song-ring .ring-musicbg{
     position: absolute;
