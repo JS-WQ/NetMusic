@@ -1,6 +1,7 @@
 *{margin: 0;padding: 0;box-sizing: border-box;overflow: hidden;}
 
-@keyframes circle{0% {transform: rotate(0deg); } 100% {transform: rotate(360deg); } }
+@keyframes circle{0% {transform: rotate(0deg);transform: translate(-50%, -50%);
+ } 100% {transform: rotate(360deg);transform: translate(-50%, -50%); } }
 #page{height:100vh;display: flex;flex-wrap: wrap;background-position:50%;background-size: cover;flex-direction: column;position: relative;}
 .song-container{position: relative;width: 100%;}
 .song-container .musicbg{width: 25.6vw;position: absolute;left: 46vw;z-index: 5;}
@@ -10,6 +11,8 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 100vw;
+    height: 79vw;
 }
 .song-container .song-ring .icon-wrapper{
     display: flex; 
@@ -51,7 +54,6 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-
 }
 .song-subtitle{text-align: center;margin-top: 6.66vw;}
 .song-subtitle h2{
