@@ -13,12 +13,12 @@ $(function(){
     function initSong(url,image,bgimage){
         let audio = document.createElement('audio')
         audio.src = url
+
         audio.oncanplay=function(){
-            audio.play()
             $('.song-container').addClass('playing')
             $('#page').css("background-image",`url(${bgimage})`)
             $('.ring-musicbg').attr("src",`${image}`)
-            console.log()
+            audio.play()
         }
         audio.onended=function(){
             $('.song-container').removeClass('playing')

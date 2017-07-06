@@ -7,7 +7,7 @@ ol,li{list-style: none;}
 .siteNav>ol>li{flex: 1;}
 .siteNav>ol>li.active{color: #D33A31;}
 .siteNav>ol>li>span{font-family:Helvetica, sans-serif;font-size: 4vw;position: relative;display: inline-block;line-height: 10.7vw;}
-.siteNav>ol>li>span::before{
+.siteNav>ol>li.active >span::before{
     content: '';
     position: absolute;
     bottom: 0;
