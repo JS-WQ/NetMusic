@@ -10,7 +10,7 @@ $(function(){
         initLyric(name,lyric)
     })
 
-    function initSong(url,avatars,bgimage){
+    function initSong(url,image,bgimage){
         let audio = document.createElement('audio')
         audio.src = url
 

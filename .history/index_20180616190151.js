@@ -2,6 +2,7 @@ $(function(){
     $.get('./song.json').then(function(response){
         console.log('hhh')
         let items = response
+        console.log(response)
         items.forEach((i)=>{
             let $li = $(`
             <li>

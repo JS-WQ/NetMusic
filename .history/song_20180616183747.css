@@ -17,14 +17,14 @@
 .song-container .song-ring .icon-wrapper{
     display: flex; 
 	justify-content: center; align-items: center;
-	border: 1px solid white; height: 16vw; width: 16vw;
+	border: 1px solid white; height: 23vw; width: 23vw;
 	border-radius: 50%; background: rgba(0,0,0,0.5);
     position: absolute;z-index: 7;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
 }
-.song-container .song-ring .icon{width: 7vw; fill: white;}
+.song-container .song-ring .icon{width: 10vw; fill: white;}
 .song-container .song-ring  .ring-musicbg{width: 44.5vw; position: absolute; border-radius: 50%;animation: circle 20s infinite linear; animation-play-state: paused;}
 .song-container.playing .song-ring .trans-ring,.song-container.playing .song-ring .ring-musicbg{animation-play-state: running;}
 
@@ -44,8 +44,8 @@
 }
 .song-container .song-ring .ring-musicbg{
     position: absolute;
-    width: 51.1vw;
-    height: 51.1vw;
+    width: 49.1vw;
+    height: 49.1vw;
     z-index: 3;
     border-radius: 50%;
     left: 50%;
